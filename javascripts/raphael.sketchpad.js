@@ -1,4 +1,4 @@
-/*
+	/*
  * Raphael SketchPad
  * Version 0.5.1
  * Copyright (c) 2011 Ian Li (http://ianli.com)
@@ -366,7 +366,7 @@
 			if (_options.editing == "erase") {
 				var stroke = this.attr();
 				stroke.type = this.type;
-				
+				stroke.path = stroke.path.toString(); //ysj modified
 				_action_history.add({
 					type: "erase",
 					stroke: stroke
